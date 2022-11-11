@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="src/p5.min.js"></script>
-    <script src="src/ml5.min.js"></script>
-    <script src="learn.js"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
-    <title>yogAI</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178448067-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-178448067-1');
-    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="style1.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./media/logo.png" type="image/png" />
+    <title>Yoga</title>
   </head>
-  
+
   <body>
-    <div class="container">
-      <div id="div-one">
-        <div id="rectangle">Loading...</div>
-        <div class="parent">
+    <div class="wrapper container">
+      <nav class="flex-r">
+        <div class="flex-r nav-logo">
+          <img src="./media/logo.png" alt="" />
         </div>
-      </div>
-      <div id="div-two">
-        <div class="aligner">
-          <h1 id="poseName" class="child" style="font-size: 100px; text-align:center;"><span>Tree</span></h1>
+
+        <div class="flex-r nav-link">
+          <!-- <a class="active" href="#">Home</a> -->
+          <!-- <a href="#">Articles</a>
+          <a href="#">Classes</a>
+          <a href="#">Courses</a>
+          <a href="#">Mentors</a> -->
         </div>
-        <div class="aligner">
-          <img id="poseImg" style="width:340px;height:340px; align-items: center;" src="imgs/mountain.svg">
+
+        <!-- <div class="nav-btn">
+          <a href="#" class="btn">Log in</a>
+        </div> -->
+      </nav>
+
+      <main class="flex-r">
+        <div class="main-text">
+          <h1 class="lg-head">Practice yoga<span> At Home</span></h1>
+          <h1 class="m-head">Assisted with AI</h1>
+          <p class="para">Try out multiple poses</p>
+          
+          <!-- <input type="button" class="btn" onclick="window.location.href='./app.html'" value="Start"> -->
         </div>
-        <div class="aligner">
-          <h1><span id="time" style="font-size:100px; text-align: center;">00:10</span></h1>
+        <a href="app.html" class="btn">Start</a>
+        
+        <div class="side_pic">
+          <img src="./media/side_pic.png" alt="" />
         </div>
-        <div class="aligner">
-          <h1 style="font-size: 40px; text-align: center;">seconds left to hold</h1>
-        </div>
-      </div>
+        
+        <!-- position  -->
+        <!-- <div class="flex-c class-info">
+          <span>2000+</span>
+          <p>classes</p>
+        </div> -->
+      </main>
+      <!-- fade color position -->
+      <div class="fade"></div>
     </div>
   </body>
 </html>
